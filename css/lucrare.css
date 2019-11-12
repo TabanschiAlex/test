@@ -1,0 +1,61 @@
+.dash {
+	border: 5px dashed red;
+	width: 50%;
+	height: 120px;
+	text-align: right;
+	font-weight:bold
+}
+
+img {
+	border: 5px solid green;
+}
+
+.menu {
+	background: red;
+	width: 500px;
+	height: 50px;
+	text-align: center;
+	vertical-align: middle;
+	border-radius: 20px 0 0 20px;
+}
+
+.menu nav {
+	padding-top: 10px;
+}
+
+.menu nav li {
+    list-style-type: none;
+    display: inline;
+}
+
+.menu nav ul li a {
+	text-decoration: none;
+	color: white;
+	font-size: 20px;
+	margin-left: 10px;
+}
+
+.drop {
+    visibility: hidden;
+}
+
+.drop:hover {
+    visibility: visible;
+}
+
+.drop li a {
+    text-decoration: none;
+	color: white;
+	font-size: 20px;
+}
+
+.menu nav a:hover{
+	border: 1px solid blue;
+	border-color: blue;
+	background: blue;
+	border-radius: 20px;
+}
+
+.menu nav a:nth-child(3):hover, .drop:hover {
+    visibility: visible;
+}
