@@ -20,12 +20,13 @@ img {
 }
 
 .menu nav {
-	padding-top: 10px;
+	padding-top: 1px;
 }
 
 .menu nav li {
     list-style-type: none;
-    display: inline;
+    display: inline-flex;
+    position: relative;
 }
 
 .menu nav ul li a {
@@ -35,12 +36,21 @@ img {
 	margin-left: 10px;
 }
 
-.drop {
-    visibility: hidden;
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    background: #ccc;
+    padding: 0;
 }
 
-.drop:hover {
-    visibility: visible;
+.drop:hover > .dropdown {
+    display: block;
+}
+
+.dropdown:hover > .dropdown {
+    display: block;
 }
 
 .drop li a {
@@ -54,8 +64,4 @@ img {
 	border-color: blue;
 	background: blue;
 	border-radius: 20px;
-}
-
-.menu nav a:nth-child(3):hover, .drop:hover {
-    visibility: visible;
 }
